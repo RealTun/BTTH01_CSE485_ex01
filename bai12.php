@@ -23,7 +23,7 @@ use function PHPSTORM_META\map;
     echo "Số lớn nhất: " . max($numbers) . ", số nhỏ nhất: " . min($numbers). ", tổng mảng: " . $sum . '<br>';
 
 
-    $arrAsc = array_map(function($key => $value) use ($numbers){
+    $arrAsc = array_map(function($value) use ($numbers){
         return $numbers[$value];
     }, array_keys($numbers));
 
